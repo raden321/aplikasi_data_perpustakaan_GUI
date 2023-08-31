@@ -1,0 +1,2678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1120</width>
+    <height>658</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame_superior">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>35</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QFrame{
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+background-color: rgb(255, 178, 90);
+
+}
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_8">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>2</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>2</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item alignment="Qt::AlignLeft">
+        <widget class="QPushButton" name="bt_menu">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>200</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+background-color: rgb(85, 170, 255);
+font: 87 12pt &quot;Arial Black&quot;;
+border-radius:0px;
+}
+
+QPushButton:hover{
+background-color: white;
+font: 87 12pt &quot;Arial Black&quot;;
+
+}
+</string>
+         </property>
+         <property name="text">
+          <string>    MENU </string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>barra-de-menus.png</normaloff>barra-de-menus.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+         <property name="default">
+          <bool>false</bool>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>265</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item alignment="Qt::AlignRight">
+        <widget class="QPushButton" name="bt_minimizar">
+         <property name="minimumSize">
+          <size>
+           <width>35</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+border:0px;
+}
+
+QPushButton:hover{
+border:5px solid #aa00ff;
+background-color:#ffff00;
+
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>minimizar.png</normaloff>minimizar.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignRight">
+        <widget class="QPushButton" name="bt_restaurar">
+         <property name="maximumSize">
+          <size>
+           <width>35</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+border:0px;
+
+}
+
+QPushButton:hover{
+border:5px solid #aa00ff;
+background-color:#55ff00;
+
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>restaurar.png</normaloff>restaurar.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignRight">
+        <widget class="QPushButton" name="bt_maximizar">
+         <property name="maximumSize">
+          <size>
+           <width>35</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+border:0px;
+
+}
+
+QPushButton:hover{
+border:5px solid #aa00ff;
+background-color:#55ff00;
+
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>maximizar.png</normaloff>maximizar.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignRight">
+        <widget class="QPushButton" name="bt_cerrar">
+         <property name="maximumSize">
+          <size>
+           <width>35</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+border:0px;
+
+}
+
+QPushButton:hover{
+border:5px solid #aa00ff;
+background-color:red;
+
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>cerrar.png</normaloff>cerrar.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_inferior">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item alignment="Qt::AlignLeft">
+        <widget class="QFrame" name="frame_lateral">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>0</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QFrame{
+background-color: rgb(255, 178, 90);
+}
+
+
+
+QPushButton{
+background-color: rgb(85, 170, 255);
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+
+font: 75 12pt &quot;Arial Narrow&quot;;
+	
+}
+
+QPushButton:hover{
+background-color: white;
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+
+font: 75 12pt &quot;Arial Narrow&quot;;
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="spacing">
+           <number>20</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>9</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="bt_inicio">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="contextMenuPolicy">
+             <enum>Qt::DefaultContextMenu</enum>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="text">
+             <string>            HOME     </string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>house.png</normaloff>house.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bt_uno">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="toolTipDuration">
+             <number>0</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>        DATA BUKU</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../Pictures/icon/books.png</normaloff>../../Pictures/icon/books.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>35</width>
+              <height>35</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bt_dos">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>DATA PEMINJAM</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../Pictures/icon/pages.png</normaloff>../../Pictures/icon/pages.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bt_tres">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  KEANGGOTAAN</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../Pictures/icon/student.png</normaloff>../../Pictures/icon/student.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bt_cuatro">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>       LOGIN</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../Pictures/icon/profile.png</normaloff>../../Pictures/icon/profile.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bt_cinco">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>     LOGOUT</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../Pictures/icon/switch.png</normaloff>../../Pictures/icon/switch.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="styleSheet">
+             <string notr="true">font: italic 15pt &quot;Vivaldi&quot;;</string>
+            </property>
+            <property name="text">
+             <string>PyQt5 ~Raden</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_contenedor">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <property name="lineWidth">
+          <number>1</number>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QStackedWidget" name="stackedWidget">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="lineWidth">
+             <number>0</number>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="page">
+             <layout class="QVBoxLayout" name="verticalLayout_9">
+              <item>
+               <widget class="QFrame" name="frame_2">
+                <property name="styleSheet">
+                 <string notr="true">background-image: url(:/image/my perpus.png);</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_2">
+             <widget class="QTableWidget" name="tableWidget">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>1201</width>
+                <height>691</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <row>
+               <property name="text">
+                <string>1</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>2</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>3</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>4</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>5</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>6</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>7</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>8</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>9</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>10</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>11</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>12</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>13</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>14</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>15</string>
+               </property>
+              </row>
+              <column>
+               <property name="text">
+                <string>KODE BUKU</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>JUDUL</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>KATEGORI</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>KONDISI</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>JUMLAH HALAMAN</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>PENULIS</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>EDISI</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>PENERBIT</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>JUMLAH EKSAMPLER</string>
+               </property>
+              </column>
+              <item row="0" column="0">
+               <property name="text">
+                <string>0192812</string>
+               </property>
+              </item>
+              <item row="0" column="1">
+               <property name="text">
+                <string>teras</string>
+               </property>
+              </item>
+              <item row="0" column="2">
+               <property name="text">
+                <string>FIKSI </string>
+               </property>
+              </item>
+              <item row="0" column="3">
+               <property name="text">
+                <string>BAIK</string>
+               </property>
+              </item>
+              <item row="0" column="4">
+               <property name="text">
+                <string>211</string>
+               </property>
+              </item>
+              <item row="0" column="5">
+               <property name="text">
+                <string>deni</string>
+               </property>
+              </item>
+              <item row="0" column="6">
+               <property name="text">
+                <string>pertama</string>
+               </property>
+              </item>
+              <item row="0" column="7">
+               <property name="text">
+                <string>dika</string>
+               </property>
+              </item>
+              <item row="0" column="8">
+               <property name="text">
+                <string>1</string>
+               </property>
+              </item>
+              <item row="1" column="0">
+               <property name="text">
+                <string>0821822</string>
+               </property>
+              </item>
+              <item row="1" column="1">
+               <property name="text">
+                <string> Akuntansi Pengantar</string>
+               </property>
+              </item>
+              <item row="1" column="2">
+               <property name="text">
+                <string>fiksi</string>
+               </property>
+              </item>
+              <item row="1" column="3">
+               <property name="text">
+                <string>baik</string>
+               </property>
+              </item>
+              <item row="1" column="4">
+               <property name="text">
+                <string>129</string>
+               </property>
+              </item>
+              <item row="1" column="5">
+               <property name="text">
+                <string>Supardi</string>
+               </property>
+              </item>
+              <item row="1" column="6">
+               <property name="text">
+                <string>pertama</string>
+               </property>
+              </item>
+              <item row="1" column="7">
+               <property name="text">
+                <string>Gava Media</string>
+               </property>
+              </item>
+              <item row="1" column="8">
+               <property name="text">
+                <string>2</string>
+               </property>
+              </item>
+              <item row="2" column="0">
+               <property name="text">
+                <string>0827261</string>
+               </property>
+              </item>
+              <item row="2" column="1">
+               <property name="text">
+                <string>Aplikasi Klinis Induk Ovulasi &amp; Stimulasi Ovariu</string>
+               </property>
+              </item>
+              <item row="2" column="2">
+               <property name="text">
+                <string>Misteri</string>
+               </property>
+              </item>
+              <item row="2" column="3">
+               <property name="text">
+                <string>baik</string>
+               </property>
+              </item>
+              <item row="2" column="4">
+               <property name="text">
+                <string>321</string>
+               </property>
+              </item>
+              <item row="2" column="5">
+               <property name="text">
+                <string>Samsulhadi</string>
+               </property>
+              </item>
+              <item row="2" column="6">
+               <property name="text">
+                <string>kedua</string>
+               </property>
+              </item>
+              <item row="2" column="7">
+               <property name="text">
+                <string>Sagung Seto</string>
+               </property>
+              </item>
+              <item row="2" column="8">
+               <property name="text">
+                <string>5</string>
+               </property>
+              </item>
+              <item row="3" column="0">
+               <property name="text">
+                <string>0821827</string>
+               </property>
+              </item>
+              <item row="3" column="1">
+               <property name="text">
+                <string>Aplikasi Praktis Asuhan Keperawatan Keluarga</string>
+               </property>
+              </item>
+              <item row="3" column="2">
+               <property name="text">
+                <string>Fiksi Inspirasi</string>
+               </property>
+              </item>
+              <item row="3" column="3">
+               <property name="text">
+                <string>Baru</string>
+               </property>
+              </item>
+              <item row="3" column="4">
+               <property name="text">
+                <string>218</string>
+               </property>
+              </item>
+              <item row="3" column="5">
+               <property name="text">
+                <string>Komang Ayu Heni</string>
+               </property>
+              </item>
+              <item row="3" column="6">
+               <property name="text">
+                <string>kelima</string>
+               </property>
+              </item>
+              <item row="3" column="7">
+               <property name="text">
+                <string>Sagung Seto</string>
+               </property>
+              </item>
+              <item row="3" column="8">
+               <property name="text">
+                <string>2</string>
+               </property>
+              </item>
+              <item row="4" column="0">
+               <property name="text">
+                <string>0728723</string>
+               </property>
+              </item>
+              <item row="4" column="1">
+               <property name="text">
+                <string>Berbagai kumpulan topik Psikologi</string>
+               </property>
+              </item>
+              <item row="4" column="2">
+               <property name="text">
+                <string>Fiksi </string>
+               </property>
+              </item>
+              <item row="4" column="3">
+               <property name="text">
+                <string>BARU</string>
+               </property>
+              </item>
+              <item row="4" column="4">
+               <property name="text">
+                <string>156</string>
+               </property>
+              </item>
+              <item row="4" column="5">
+               <property name="text">
+                <string>Zainul Anwar</string>
+               </property>
+              </item>
+              <item row="4" column="6">
+               <property name="text">
+                <string>KEDUA</string>
+               </property>
+              </item>
+              <item row="4" column="7">
+               <property name="text">
+                <string>Andi Offset</string>
+               </property>
+              </item>
+              <item row="4" column="8">
+               <property name="text">
+                <string>3</string>
+               </property>
+              </item>
+              <item row="5" column="0">
+               <property name="text">
+                <string>0827372</string>
+               </property>
+              </item>
+              <item row="5" column="1">
+               <property name="text">
+                <string>Mencari identitas kebangsaan</string>
+               </property>
+              </item>
+              <item row="5" column="2">
+               <property name="text">
+                <string>Fiksi Ilmiah</string>
+               </property>
+              </item>
+              <item row="5" column="3">
+               <property name="text">
+                <string>Bagus</string>
+               </property>
+              </item>
+              <item row="5" column="4">
+               <property name="text">
+                <string>154</string>
+               </property>
+              </item>
+              <item row="5" column="5">
+               <property name="text">
+                <string>Nasruddin Anshoriy</string>
+               </property>
+              </item>
+              <item row="5" column="6">
+               <property name="text">
+                <string>PERTAMA</string>
+               </property>
+              </item>
+              <item row="5" column="7">
+               <property name="text">
+                <string>LKiS</string>
+               </property>
+              </item>
+              <item row="5" column="8">
+               <property name="text">
+                <string>1</string>
+               </property>
+              </item>
+              <item row="6" column="0">
+               <property name="text">
+                <string>0827223</string>
+               </property>
+              </item>
+              <item row="6" column="1">
+               <property name="text">
+                <string>The Authorized Biography of KH. Abdurrahman Wahid </string>
+               </property>
+              </item>
+              <item row="6" column="2">
+               <property name="text">
+                <string>fiksi</string>
+               </property>
+              </item>
+              <item row="6" column="3">
+               <property name="text">
+                <string>BAIK</string>
+               </property>
+              </item>
+              <item row="6" column="4">
+               <property name="text">
+                <string>243</string>
+               </property>
+              </item>
+              <item row="6" column="5">
+               <property name="text">
+                <string>Greg Barton</string>
+               </property>
+              </item>
+              <item row="6" column="6">
+               <property name="text">
+                <string>KEENAM</string>
+               </property>
+              </item>
+              <item row="6" column="7">
+               <property name="text">
+                <string>LKiS</string>
+               </property>
+              </item>
+              <item row="6" column="8">
+               <property name="text">
+                <string>3</string>
+               </property>
+              </item>
+              <item row="7" column="0">
+               <property name="text">
+                <string>0821629</string>
+               </property>
+              </item>
+              <item row="7" column="1">
+               <property name="text">
+                <string>Buku Ajar Tumbuh Kembang Remaja &amp; Permasalahanya</string>
+               </property>
+              </item>
+              <item row="7" column="2">
+               <property name="text">
+                <string>FANTASI</string>
+               </property>
+              </item>
+              <item row="7" column="3">
+               <property name="text">
+                <string>BAIK</string>
+               </property>
+              </item>
+              <item row="7" column="4">
+               <property name="text">
+                <string>563</string>
+               </property>
+              </item>
+              <item row="7" column="5">
+               <property name="text">
+                <string>Soetjiningsih</string>
+               </property>
+              </item>
+              <item row="7" column="6">
+               <property name="text">
+                <string>KEDUA</string>
+               </property>
+              </item>
+              <item row="7" column="7">
+               <property name="text">
+                <string>Sagung Seto</string>
+               </property>
+              </item>
+              <item row="7" column="8">
+               <property name="text">
+                <string>3</string>
+               </property>
+              </item>
+              <item row="8" column="0">
+               <property name="text">
+                <string>0982721</string>
+               </property>
+              </item>
+              <item row="8" column="1">
+               <property name="text">
+                <string>Cedera Kepala</string>
+               </property>
+              </item>
+              <item row="8" column="2">
+               <property name="text">
+                <string>inspirasi</string>
+               </property>
+              </item>
+              <item row="8" column="3">
+               <property name="text">
+                <string>BARU</string>
+               </property>
+              </item>
+              <item row="8" column="4">
+               <property name="text">
+                <string>231</string>
+               </property>
+              </item>
+              <item row="8" column="5">
+               <property name="text">
+                <string>M. Z. Arifin</string>
+               </property>
+              </item>
+              <item row="8" column="6">
+               <property name="text">
+                <string>PERTAMA</string>
+               </property>
+              </item>
+              <item row="8" column="7">
+               <property name="text">
+                <string>Sagung Seto</string>
+               </property>
+              </item>
+              <item row="8" column="8">
+               <property name="text">
+                <string>3</string>
+               </property>
+              </item>
+              <item row="9" column="0">
+               <property name="text">
+                <string>0726263</string>
+               </property>
+              </item>
+              <item row="9" column="1">
+               <property name="text">
+                <string>Dasar Dasar Uroginekologi</string>
+               </property>
+              </item>
+              <item row="9" column="2">
+               <property name="text">
+                <string>inspirasi</string>
+               </property>
+              </item>
+              <item row="9" column="3">
+               <property name="text">
+                <string>baru</string>
+               </property>
+              </item>
+              <item row="9" column="4">
+               <property name="text">
+                <string>132</string>
+               </property>
+              </item>
+              <item row="9" column="5">
+               <property name="text">
+                <string>Pribakti B</string>
+               </property>
+              </item>
+              <item row="9" column="6">
+               <property name="text">
+                <string>KETUJUH</string>
+               </property>
+              </item>
+              <item row="9" column="7">
+               <property name="text">
+                <string>Sagung Seto</string>
+               </property>
+              </item>
+              <item row="9" column="8">
+               <property name="text">
+                <string>3</string>
+               </property>
+              </item>
+              <item row="10" column="0">
+               <property name="text">
+                <string>0327128</string>
+               </property>
+              </item>
+              <item row="10" column="1">
+               <property name="text">
+                <string>Etnografi Pengobatan; Praktik Budaya peramuan &amp; sugesti komunitas adat Tau Taa Vana</string>
+               </property>
+              </item>
+              <item row="10" column="2">
+               <property name="text">
+                <string>INSPIRASI</string>
+               </property>
+              </item>
+              <item row="10" column="3">
+               <property name="text">
+                <string>BARU</string>
+               </property>
+              </item>
+              <item row="10" column="4">
+               <property name="text">
+                <string>185</string>
+               </property>
+              </item>
+              <item row="10" column="5">
+               <property name="text">
+                <string>Alie Humaedi</string>
+               </property>
+              </item>
+              <item row="10" column="6">
+               <property name="text">
+                <string>KEDUA</string>
+               </property>
+              </item>
+              <item row="10" column="7">
+               <property name="text">
+                <string>LKiS</string>
+               </property>
+              </item>
+              <item row="10" column="8">
+               <property name="text">
+                <string>1</string>
+               </property>
+              </item>
+              <item row="11" column="0">
+               <property name="text">
+                <string>0537612</string>
+               </property>
+              </item>
+              <item row="11" column="1">
+               <property name="text">
+                <string>Hantu Digoel; Politik Pengamanan Politik Zaman Kolonial</string>
+               </property>
+              </item>
+              <item row="11" column="2">
+               <property name="text">
+                <string>INSPIRASI</string>
+               </property>
+              </item>
+              <item row="11" column="3">
+               <property name="text">
+                <string>baru</string>
+               </property>
+              </item>
+              <item row="11" column="4">
+               <property name="text">
+                <string>249</string>
+               </property>
+              </item>
+              <item row="11" column="5">
+               <property name="text">
+                <string>Hantu Digoel; Politik Pengamanan Politik Zaman Kolonial</string>
+               </property>
+              </item>
+              <item row="11" column="6">
+               <property name="text">
+                <string>PERTAMA</string>
+               </property>
+              </item>
+              <item row="11" column="7">
+               <property name="text">
+                <string>LKiS</string>
+               </property>
+              </item>
+              <item row="11" column="8">
+               <property name="text">
+                <string>4</string>
+               </property>
+              </item>
+              <item row="12" column="0">
+               <property name="text">
+                <string>0635282</string>
+               </property>
+              </item>
+              <item row="12" column="1">
+               <property name="text">
+                <string>Islam Agama ramah perempuan; Pembelaan kiai pesantren</string>
+               </property>
+              </item>
+              <item row="12" column="2">
+               <property name="text">
+                <string>inspirasi</string>
+               </property>
+              </item>
+              <item row="12" column="3">
+               <property name="text">
+                <string>baru</string>
+               </property>
+              </item>
+              <item row="12" column="4">
+               <property name="text">
+                <string>439</string>
+               </property>
+              </item>
+              <item row="12" column="5">
+               <property name="text">
+                <string>Husein Muhammad</string>
+               </property>
+              </item>
+              <item row="12" column="6">
+               <property name="text">
+                <string>ketiga</string>
+               </property>
+              </item>
+              <item row="12" column="7">
+               <property name="text">
+                <string>LKiS</string>
+               </property>
+              </item>
+              <item row="12" column="8">
+               <property name="text">
+                <string>2</string>
+               </property>
+              </item>
+              <item row="13" column="0">
+               <property name="text">
+                <string>0728172</string>
+               </property>
+              </item>
+              <item row="13" column="1">
+               <property name="text">
+                <string>Islam Jawa; Kesalehan Normatif Versus Kebatinan</string>
+               </property>
+              </item>
+              <item row="13" column="2">
+               <property name="text">
+                <string>inspirasi</string>
+               </property>
+              </item>
+              <item row="13" column="3">
+               <property name="text">
+                <string>baru</string>
+               </property>
+              </item>
+              <item row="13" column="4">
+               <property name="text">
+                <string>281</string>
+               </property>
+              </item>
+              <item row="13" column="5">
+               <property name="text">
+                <string>Mark R. Woodward</string>
+               </property>
+              </item>
+              <item row="13" column="6">
+               <property name="text">
+                <string>PERTAMA</string>
+               </property>
+              </item>
+              <item row="13" column="7">
+               <property name="text">
+                <string>LKiS</string>
+               </property>
+              </item>
+              <item row="13" column="8">
+               <property name="text">
+                <string>9</string>
+               </property>
+              </item>
+              <item row="14" column="0">
+               <property name="text">
+                <string>0158271</string>
+               </property>
+              </item>
+              <item row="14" column="1">
+               <property name="text">
+                <string>Islam Pasar Keadilan; Artikulasi Lokal, Kapitalisme, dan Demokrasi</string>
+               </property>
+              </item>
+              <item row="14" column="2">
+               <property name="text">
+                <string>inspirasi</string>
+               </property>
+              </item>
+              <item row="14" column="3">
+               <property name="text">
+                <string>BAIK</string>
+               </property>
+              </item>
+              <item row="14" column="4">
+               <property name="text">
+                <string>300</string>
+               </property>
+              </item>
+              <item row="14" column="5">
+               <property name="text">
+                <string>Robert W. Hefner</string>
+               </property>
+              </item>
+              <item row="14" column="6">
+               <property name="text">
+                <string>KEDUA</string>
+               </property>
+              </item>
+              <item row="14" column="7">
+               <property name="text">
+                <string>LKiS</string>
+               </property>
+              </item>
+              <item row="14" column="8">
+               <property name="text">
+                <string>4</string>
+               </property>
+              </item>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="page_3">
+             <widget class="QTableWidget" name="tableWidget_2">
+              <property name="geometry">
+               <rect>
+                <x>40</x>
+                <y>20</y>
+                <width>621</width>
+                <height>441</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 85, 0);</string>
+              </property>
+              <row>
+               <property name="text">
+                <string>1</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>2</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>3</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>4</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>5</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>6</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>7</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>8</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>9</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>10</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>11</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>12</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>13</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>14</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>15</string>
+               </property>
+              </row>
+              <column>
+               <property name="text">
+                <string>KODE BUKU</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>NAMA PEMINJAM</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>TANGGAL PEMINJAM</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>TGGL PENGEMBALIAN</string>
+               </property>
+              </column>
+              <item row="0" column="0">
+               <property name="text">
+                <string>098827</string>
+               </property>
+              </item>
+              <item row="0" column="1">
+               <property name="text">
+                <string>PURNAWAN</string>
+               </property>
+              </item>
+              <item row="0" column="2">
+               <property name="text">
+                <string>10-11-2018</string>
+               </property>
+              </item>
+              <item row="0" column="3">
+               <property name="text">
+                <string>20-11-2018</string>
+               </property>
+              </item>
+              <item row="1" column="0">
+               <property name="text">
+                <string>097232</string>
+               </property>
+              </item>
+              <item row="1" column="1">
+               <property name="text">
+                <string>ZAENA</string>
+               </property>
+              </item>
+              <item row="1" column="2">
+               <property name="text">
+                <string>15-11-2018</string>
+               </property>
+              </item>
+              <item row="1" column="3">
+               <property name="text">
+                <string>17-11-2018</string>
+               </property>
+              </item>
+              <item row="2" column="0">
+               <property name="text">
+                <string>065217</string>
+               </property>
+              </item>
+              <item row="2" column="1">
+               <property name="text">
+                <string>NIZAM</string>
+               </property>
+              </item>
+              <item row="2" column="2">
+               <property name="text">
+                <string>10-01-2019</string>
+               </property>
+              </item>
+              <item row="2" column="3">
+               <property name="text">
+                <string>13-01-2019</string>
+               </property>
+              </item>
+              <item row="3" column="0">
+               <property name="text">
+                <string>024161</string>
+               </property>
+              </item>
+              <item row="3" column="1">
+               <property name="text">
+                <string>DIANA</string>
+               </property>
+              </item>
+              <item row="3" column="2">
+               <property name="text">
+                <string>16-11-2020</string>
+               </property>
+              </item>
+              <item row="3" column="3">
+               <property name="text">
+                <string>18-11-2020</string>
+               </property>
+              </item>
+              <item row="4" column="0">
+               <property name="text">
+                <string>057263</string>
+               </property>
+              </item>
+              <item row="4" column="1">
+               <property name="text">
+                <string>ZIK</string>
+               </property>
+              </item>
+              <item row="4" column="2">
+               <property name="text">
+                <string>17-11-2020</string>
+               </property>
+              </item>
+              <item row="4" column="3">
+               <property name="text">
+                <string>19-11-2020</string>
+               </property>
+              </item>
+              <item row="5" column="0">
+               <property name="text">
+                <string>012461</string>
+               </property>
+              </item>
+              <item row="5" column="1">
+               <property name="text">
+                <string>DANI</string>
+               </property>
+              </item>
+              <item row="5" column="2">
+               <property name="text">
+                <string>09-12-2020</string>
+               </property>
+              </item>
+              <item row="5" column="3">
+               <property name="text">
+                <string>10-12-2020</string>
+               </property>
+              </item>
+              <item row="6" column="0">
+               <property name="text">
+                <string>039271</string>
+               </property>
+              </item>
+              <item row="6" column="1">
+               <property name="text">
+                <string>ROLI</string>
+               </property>
+              </item>
+              <item row="6" column="2">
+               <property name="text">
+                <string>20-12-2020</string>
+               </property>
+              </item>
+              <item row="6" column="3">
+               <property name="text">
+                <string>22-12-2020</string>
+               </property>
+              </item>
+              <item row="7" column="0">
+               <property name="text">
+                <string>029873</string>
+               </property>
+              </item>
+              <item row="7" column="1">
+               <property name="text">
+                <string>DELA</string>
+               </property>
+              </item>
+              <item row="7" column="2">
+               <property name="text">
+                <string>23-12-2020</string>
+               </property>
+              </item>
+              <item row="7" column="3">
+               <property name="text">
+                <string>24-12-2020</string>
+               </property>
+              </item>
+              <item row="8" column="0">
+               <property name="text">
+                <string>049823</string>
+               </property>
+              </item>
+              <item row="8" column="1">
+               <property name="text">
+                <string>ZIDAN</string>
+               </property>
+              </item>
+              <item row="8" column="2">
+               <property name="text">
+                <string>01-01-2021</string>
+               </property>
+              </item>
+              <item row="8" column="3">
+               <property name="text">
+                <string>02-01-2021</string>
+               </property>
+              </item>
+              <item row="9" column="0">
+               <property name="text">
+                <string>051727</string>
+               </property>
+              </item>
+              <item row="9" column="1">
+               <property name="text">
+                <string>NURI</string>
+               </property>
+              </item>
+              <item row="9" column="2">
+               <property name="text">
+                <string>04-01-2021</string>
+               </property>
+              </item>
+              <item row="9" column="3">
+               <property name="text">
+                <string>06-01-2021</string>
+               </property>
+              </item>
+              <item row="10" column="0">
+               <property name="text">
+                <string>051829</string>
+               </property>
+              </item>
+              <item row="10" column="1">
+               <property name="text">
+                <string>FAUZAN</string>
+               </property>
+              </item>
+              <item row="10" column="2">
+               <property name="text">
+                <string>06-01-2021</string>
+               </property>
+              </item>
+              <item row="10" column="3">
+               <property name="text">
+                <string>08-01-2021</string>
+               </property>
+              </item>
+              <item row="11" column="0">
+               <property name="text">
+                <string>098276</string>
+               </property>
+              </item>
+              <item row="11" column="1">
+               <property name="text">
+                <string>ILHAM</string>
+               </property>
+              </item>
+              <item row="11" column="2">
+               <property name="text">
+                <string>08-01-2021</string>
+               </property>
+              </item>
+              <item row="11" column="3">
+               <property name="text">
+                <string>10-01-2021</string>
+               </property>
+              </item>
+              <item row="12" column="0">
+               <property name="text">
+                <string>098277</string>
+               </property>
+              </item>
+              <item row="12" column="1">
+               <property name="text">
+                <string>RAHMAN</string>
+               </property>
+              </item>
+              <item row="12" column="2">
+               <property name="text">
+                <string>12-01-2021</string>
+               </property>
+              </item>
+              <item row="12" column="3">
+               <property name="text">
+                <string>13-01-2021</string>
+               </property>
+              </item>
+              <item row="13" column="0">
+               <property name="text">
+                <string>098128</string>
+               </property>
+              </item>
+              <item row="13" column="1">
+               <property name="text">
+                <string>NIKMATUL</string>
+               </property>
+              </item>
+              <item row="13" column="2">
+               <property name="text">
+                <string>14-01-2021</string>
+               </property>
+              </item>
+              <item row="13" column="3">
+               <property name="text">
+                <string>16-01-2021</string>
+               </property>
+              </item>
+              <item row="14" column="0">
+               <property name="text">
+                <string>067219</string>
+               </property>
+              </item>
+              <item row="14" column="1">
+               <property name="text">
+                <string>RIAN</string>
+               </property>
+              </item>
+              <item row="14" column="2">
+               <property name="text">
+                <string>17-01-2021</string>
+               </property>
+              </item>
+              <item row="14" column="3">
+               <property name="text">
+                <string>21-01-2021</string>
+               </property>
+              </item>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="page_4">
+             <widget class="QTableWidget" name="tableWidget_3">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>961</width>
+                <height>601</height>
+               </rect>
+              </property>
+              <row>
+               <property name="text">
+                <string>1</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>2</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>3</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>4</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>5</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>6</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>7</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>8</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>9</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>10</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>11</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>12</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>13</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>14</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>15</string>
+               </property>
+              </row>
+              <column>
+               <property name="text">
+                <string>NIK</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>NAMA</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>TGL LAHIR</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>JENIS KELAMIN</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>ALAMAT</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>NO HP</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>TANGGAL BERGABUNG</string>
+               </property>
+              </column>
+              <item row="0" column="0">
+               <property name="text">
+                <string>52918291</string>
+               </property>
+              </item>
+              <item row="0" column="1">
+               <property name="text">
+                <string>CANG</string>
+               </property>
+              </item>
+              <item row="0" column="2">
+               <property name="text">
+                <string>19-10-2=1998</string>
+               </property>
+              </item>
+              <item row="0" column="3">
+               <property name="text">
+                <string>LAKI-LAKI</string>
+               </property>
+              </item>
+              <item row="0" column="4">
+               <property name="text">
+                <string>SURALAGA</string>
+               </property>
+              </item>
+              <item row="0" column="5">
+               <property name="text">
+                <string>0856271281</string>
+               </property>
+              </item>
+              <item row="0" column="6">
+               <property name="text">
+                <string>12-12-2019</string>
+               </property>
+              </item>
+              <item row="1" column="0">
+               <property name="text">
+                <string>127817332</string>
+               </property>
+              </item>
+              <item row="1" column="1">
+               <property name="text">
+                <string>RIRIN</string>
+               </property>
+              </item>
+              <item row="1" column="2">
+               <property name="text">
+                <string>04-04-2003</string>
+               </property>
+              </item>
+              <item row="1" column="3">
+               <property name="text">
+                <string>PEREMPUAN</string>
+               </property>
+              </item>
+              <item row="1" column="4">
+               <property name="text">
+                <string>PRINGGABAYA</string>
+               </property>
+              </item>
+              <item row="1" column="5">
+               <property name="text">
+                <string>0863525312</string>
+               </property>
+              </item>
+              <item row="1" column="6">
+               <property name="text">
+                <string>09-01-2017</string>
+               </property>
+              </item>
+              <item row="2" column="0">
+               <property name="text">
+                <string>378748191</string>
+               </property>
+              </item>
+              <item row="2" column="1">
+               <property name="text">
+                <string>AWAL</string>
+               </property>
+              </item>
+              <item row="2" column="2">
+               <property name="text">
+                <string>20-11-2001</string>
+               </property>
+              </item>
+              <item row="2" column="3">
+               <property name="text">
+                <string>LAKI-LAKI</string>
+               </property>
+              </item>
+              <item row="2" column="4">
+               <property name="text">
+                <string>MASBAGIK</string>
+               </property>
+              </item>
+              <item row="2" column="5">
+               <property name="text">
+                <string>0863523231</string>
+               </property>
+              </item>
+              <item row="2" column="6">
+               <property name="text">
+                <string>02-12-2017</string>
+               </property>
+              </item>
+              <item row="3" column="0">
+               <property name="text">
+                <string>237377319</string>
+               </property>
+              </item>
+              <item row="3" column="1">
+               <property name="text">
+                <string>ZAENAL</string>
+               </property>
+              </item>
+              <item row="3" column="2">
+               <property name="text">
+                <string>07-11-2002</string>
+               </property>
+              </item>
+              <item row="3" column="3">
+               <property name="text">
+                <string>LAKI-LAKI</string>
+               </property>
+              </item>
+              <item row="3" column="4">
+               <property name="text">
+                <string>SAKRA</string>
+               </property>
+              </item>
+              <item row="3" column="5">
+               <property name="text">
+                <string>0862532761</string>
+               </property>
+              </item>
+              <item row="3" column="6">
+               <property name="text">
+                <string>06-07-2018</string>
+               </property>
+              </item>
+              <item row="4" column="0">
+               <property name="text">
+                <string>9732631263</string>
+               </property>
+              </item>
+              <item row="4" column="1">
+               <property name="text">
+                <string>FARIZ</string>
+               </property>
+              </item>
+              <item row="4" column="2">
+               <property name="text">
+                <string>02-01-2001</string>
+               </property>
+              </item>
+              <item row="4" column="3">
+               <property name="text">
+                <string>PEREMPUAN</string>
+               </property>
+              </item>
+              <item row="4" column="4">
+               <property name="text">
+                <string>SIKUR</string>
+               </property>
+              </item>
+              <item row="4" column="5">
+               <property name="text">
+                <string>08625632327</string>
+               </property>
+              </item>
+              <item row="4" column="6">
+               <property name="text">
+                <string>21-10-2019</string>
+               </property>
+              </item>
+              <item row="5" column="0">
+               <property name="text">
+                <string>09383821</string>
+               </property>
+              </item>
+              <item row="5" column="1">
+               <property name="text">
+                <string>ALEX</string>
+               </property>
+              </item>
+              <item row="5" column="2">
+               <property name="text">
+                <string>19-07-2002</string>
+               </property>
+              </item>
+              <item row="5" column="3">
+               <property name="text">
+                <string>LAKI-LAKI</string>
+               </property>
+              </item>
+              <item row="5" column="4">
+               <property name="text">
+                <string>PANCOR</string>
+               </property>
+              </item>
+              <item row="5" column="5">
+               <property name="text">
+                <string>08736276322</string>
+               </property>
+              </item>
+              <item row="5" column="6">
+               <property name="text">
+                <string>21-10-2019</string>
+               </property>
+              </item>
+              <item row="6" column="0">
+               <property name="text">
+                <string>093727373</string>
+               </property>
+              </item>
+              <item row="6" column="1">
+               <property name="text">
+                <string>GINA</string>
+               </property>
+              </item>
+              <item row="6" column="2">
+               <property name="text">
+                <string>10-12-2001</string>
+               </property>
+              </item>
+              <item row="6" column="3">
+               <property name="text">
+                <string>PEREMPUAN</string>
+               </property>
+              </item>
+              <item row="6" column="4">
+               <property name="text">
+                <string>SUELA</string>
+               </property>
+              </item>
+              <item row="6" column="5">
+               <property name="text">
+                <string>08721621263</string>
+               </property>
+              </item>
+              <item row="6" column="6">
+               <property name="text">
+                <string>21-10-2019</string>
+               </property>
+              </item>
+              <item row="7" column="0">
+               <property name="text">
+                <string>098397386</string>
+               </property>
+              </item>
+              <item row="7" column="1">
+               <property name="text">
+                <string>CILA</string>
+               </property>
+              </item>
+              <item row="7" column="2">
+               <property name="text">
+                <string>14-09-2002</string>
+               </property>
+              </item>
+              <item row="7" column="3">
+               <property name="text">
+                <string>PEREMPUAN</string>
+               </property>
+              </item>
+              <item row="7" column="4">
+               <property name="text">
+                <string>SAKRA</string>
+               </property>
+              </item>
+              <item row="7" column="5">
+               <property name="text">
+                <string>08527162712</string>
+               </property>
+              </item>
+              <item row="7" column="6">
+               <property name="text">
+                <string>21-10-2019</string>
+               </property>
+              </item>
+              <item row="8" column="0">
+               <property name="text">
+                <string>08397373</string>
+               </property>
+              </item>
+              <item row="8" column="1">
+               <property name="text">
+                <string>ALIF</string>
+               </property>
+              </item>
+              <item row="8" column="2">
+               <property name="text">
+                <string>11-03-2000</string>
+               </property>
+              </item>
+              <item row="8" column="3">
+               <property name="text">
+                <string>LAKI-LAKI</string>
+               </property>
+              </item>
+              <item row="8" column="4">
+               <property name="text">
+                <string>SAKRA</string>
+               </property>
+              </item>
+              <item row="8" column="5">
+               <property name="text">
+                <string>08512612618</string>
+               </property>
+              </item>
+              <item row="8" column="6">
+               <property name="text">
+                <string>21-10-2019</string>
+               </property>
+              </item>
+              <item row="9" column="0">
+               <property name="text">
+                <string>03721837</string>
+               </property>
+              </item>
+              <item row="9" column="1">
+               <property name="text">
+                <string>HAFIZ</string>
+               </property>
+              </item>
+              <item row="9" column="2">
+               <property name="text">
+                <string>08-02-2001</string>
+               </property>
+              </item>
+              <item row="9" column="3">
+               <property name="text">
+                <string>LAKI-LAKI</string>
+               </property>
+              </item>
+              <item row="9" column="4">
+               <property name="text">
+                <string>MASBAGIK</string>
+               </property>
+              </item>
+              <item row="9" column="5">
+               <property name="text">
+                <string>08217216281</string>
+               </property>
+              </item>
+              <item row="9" column="6">
+               <property name="text">
+                <string>21-10-2019</string>
+               </property>
+              </item>
+              <item row="10" column="0">
+               <property name="text">
+                <string>09327381</string>
+               </property>
+              </item>
+              <item row="10" column="1">
+               <property name="text">
+                <string>FIKRI</string>
+               </property>
+              </item>
+              <item row="10" column="2">
+               <property name="text">
+                <string>07-01-2002</string>
+               </property>
+              </item>
+              <item row="10" column="3">
+               <property name="text">
+                <string>LAKI-LAKI</string>
+               </property>
+              </item>
+              <item row="10" column="4">
+               <property name="text">
+                <string>SELONG</string>
+               </property>
+              </item>
+              <item row="10" column="5">
+               <property name="text">
+                <string>08219821261</string>
+               </property>
+              </item>
+              <item row="10" column="6">
+               <property name="text">
+                <string>21-10-2019</string>
+               </property>
+              </item>
+              <item row="11" column="0">
+               <property name="text">
+                <string>23982110</string>
+               </property>
+              </item>
+              <item row="11" column="1">
+               <property name="text">
+                <string>AYU</string>
+               </property>
+              </item>
+              <item row="11" column="2">
+               <property name="text">
+                <string>09-10-2000</string>
+               </property>
+              </item>
+              <item row="11" column="3">
+               <property name="text">
+                <string>PEREMPUAN</string>
+               </property>
+              </item>
+              <item row="11" column="4">
+               <property name="text">
+                <string>SELONG</string>
+               </property>
+              </item>
+              <item row="11" column="5">
+               <property name="text">
+                <string>08128192719</string>
+               </property>
+              </item>
+              <item row="11" column="6">
+               <property name="text">
+                <string>21-10-2019</string>
+               </property>
+              </item>
+              <item row="12" column="0">
+               <property name="text">
+                <string>01839713</string>
+               </property>
+              </item>
+              <item row="12" column="1">
+               <property name="text">
+                <string>YOLANDA</string>
+               </property>
+              </item>
+              <item row="12" column="2">
+               <property name="text">
+                <string>17-03-2004</string>
+               </property>
+              </item>
+              <item row="12" column="3">
+               <property name="text">
+                <string>PEREMPUAN</string>
+               </property>
+              </item>
+              <item row="12" column="4">
+               <property name="text">
+                <string>PANCOR</string>
+               </property>
+              </item>
+              <item row="12" column="5">
+               <property name="text">
+                <string>08192819721</string>
+               </property>
+              </item>
+              <item row="12" column="6">
+               <property name="text">
+                <string>21-10-2019</string>
+               </property>
+              </item>
+              <item row="13" column="0">
+               <property name="text">
+                <string>01932893</string>
+               </property>
+              </item>
+              <item row="13" column="1">
+               <property name="text">
+                <string>SIFA</string>
+               </property>
+              </item>
+              <item row="13" column="2">
+               <property name="text">
+                <string>19-05-1999</string>
+               </property>
+              </item>
+              <item row="13" column="3">
+               <property name="text">
+                <string>PEREMPUAN</string>
+               </property>
+              </item>
+              <item row="13" column="4">
+               <property name="text">
+                <string>SUELA</string>
+               </property>
+              </item>
+              <item row="13" column="5">
+               <property name="text">
+                <string>08791281928</string>
+               </property>
+              </item>
+              <item row="13" column="6">
+               <property name="text">
+                <string>21-10-2019</string>
+               </property>
+              </item>
+              <item row="14" column="0">
+               <property name="text">
+                <string>012302312</string>
+               </property>
+              </item>
+              <item row="14" column="1">
+               <property name="text">
+                <string>PIA</string>
+               </property>
+              </item>
+              <item row="14" column="2">
+               <property name="text">
+                <string>20-07-2002</string>
+               </property>
+              </item>
+              <item row="14" column="3">
+               <property name="text">
+                <string>PEREMPUAN</string>
+               </property>
+              </item>
+              <item row="14" column="4">
+               <property name="text">
+                <string>AIKMEL</string>
+               </property>
+              </item>
+              <item row="14" column="5">
+               <property name="text">
+                <string>08729172812</string>
+               </property>
+              </item>
+              <item row="14" column="6">
+               <property name="text">
+                <string>21-10-2019</string>
+               </property>
+              </item>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="page_5">
+             <widget class="QToolButton" name="toolButton">
+              <property name="geometry">
+               <rect>
+                <x>330</x>
+                <y>80</y>
+                <width>131</width>
+                <height>91</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 235, 235, 206), stop:0.35 rgba(255, 188, 188, 80), stop:0.4 rgba(255, 162, 162, 80), stop:0.425 rgba(255, 132, 132, 156), stop:0.44 rgba(252, 128, 128, 80), stop:1 rgba(255, 255, 255, 0));
+gridline-color: rgb(0, 0, 0);
+</string>
+              </property>
+              <property name="text">
+               <string>...</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>../../Pictures/icon/customer-service.png</normaloff>../../Pictures/icon/customer-service.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>70</width>
+                <height>70</height>
+               </size>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="lineEdit">
+              <property name="geometry">
+               <rect>
+                <x>280</x>
+                <y>200</y>
+                <width>241</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="placeholderText">
+               <string>Ussername</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="lineEdit_2">
+              <property name="geometry">
+               <rect>
+                <x>280</x>
+                <y>250</y>
+                <width>241</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="echoMode">
+               <enum>QLineEdit::Password</enum>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="placeholderText">
+               <string>Password</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pushButton">
+              <property name="geometry">
+               <rect>
+                <x>350</x>
+                <y>330</y>
+                <width>111</width>
+                <height>41</height>
+               </rect>
+              </property>
+              <property name="sizeIncrement">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font: 87 12pt &quot;Arial Black&quot;;
+background-color: rgb(0, 255, 0);</string>
+              </property>
+              <property name="text">
+               <string>LOGIN</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>../../Pictures/icon/profile.png</normaloff>../../Pictures/icon/profile.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>23</width>
+                <height>23</height>
+               </size>
+              </property>
+             </widget>
+             <widget class="QFrame" name="frame">
+              <property name="geometry">
+               <rect>
+                <x>110</x>
+                <y>40</y>
+                <width>591</width>
+                <height>441</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-image: url(:/image/2.jpg);</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+             <zorder>frame</zorder>
+             <zorder>toolButton</zorder>
+             <zorder>lineEdit</zorder>
+             <zorder>lineEdit_2</zorder>
+             <zorder>pushButton</zorder>
+            </widget>
+            <widget class="QWidget" name="page_6">
+             <widget class="QPushButton" name="pushButton_2">
+              <property name="geometry">
+               <rect>
+                <x>110</x>
+                <y>250</y>
+                <width>541</width>
+                <height>101</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(0, 170, 255);
+font: 87 12pt &quot;Arial Black&quot;;
+border-top-color: rgb(0, 0, 0);</string>
+              </property>
+              <property name="text">
+               <string>KELUAR</string>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>
